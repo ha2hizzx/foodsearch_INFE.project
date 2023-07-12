@@ -1,12 +1,13 @@
 // 음식 객체 배열
 const foods = [
     { name: '햄버거', ingredients: ['고기', '양파', '상추', '토마토', '빵', '소스'], description: '어디든 다니며 먹기 좋은 햄버거입니다.', recipe: '고기를 패티모양으로 구운다. -> 빵위에 고기를 엊는다 -> 위에 상추를 얹는다. -> 위에 토마토를 얹는다. -> 위에 양파를 얹는다. -> 위에 소스를 얹는다. -> 위에 빵으로 덮는다.', image: 'hamburger.webp' },
-    { name: '피자', ingredients: ['도우', '치즈', '토마토 소스', '페퍼로니'], description: '치즈의 풍미가 좋은 피자입니다.', recipe: '피자 레시피 : 도우에 토마토소스를 바른다. -> 치즈를 얹는다 -> 치즈위에 페퍼로니를 얹는다 -> 오븐 또는 에어프라이기에 넣고 적당히 익힌다.', image: 'pizza.jpg' },
-    { name: '스테이크', ingredients: ['고기', '소스', '드레싱', '버터', '샐러드', '올리브유'], description: '고급진 스테이크입니다.', recipe: '스테이크 레시피 : 달군 프라이펜에 올리브유를 두르고 버터를 녹인다 -> 고기를 넣고 샐러드를 넣는다 -> 고기에 버터를 끼얹으면서 익힌다.', image: 'stake.jpg' },
-    { name: '김치볶음밥', ingredients: ['김치', '밥', '계란'], description: '김치와 밥의 조화 김치볶음밥입니다.', recipe: '김치볶음밥 레시피 : 식용유를 두른 뒤 김치와 밥을 넣어서 볶으세요', image: 'Kimchi Fried Rice.jpg' },
+    { name: '피자', ingredients: ['도우', '치즈', '토마토소스', '페퍼로니'], description: '치즈의 풍미가 좋은 피자입니다.', recipe: '피자 레시피 : 도우에 토마토소스를 바른다. -> 치즈를 얹는다 -> 치즈위에 페퍼로니를 얹는다 -> 오븐 또는 에어프라이기에 넣고 적당히 익힌다.', image: 'pizza.jpg' },
+    { name: '스테이크', ingredients: ['고기', '소스', '드레싱', '버터', '올리브유'], description: '고급진 스테이크입니다.', recipe: '스테이크 레시피 : 달군 프라이펜에 올리브유를 두르고 버터를 녹인다 -> 고기를 넣고 드레싱을 넣는다. -> 고기에 버터를 끼얹으면서 익힌다.', image: 'stake.jpg' },
+    { name: '김치볶음밥', ingredients: ['김치', '밥', '계란'], description: '김치와 밥의 조화.. 김치볶음밥입니다.', recipe: '김치볶음밥 레시피 : 식용유를 두른 뒤 김치와 밥을 넣어서 볶으세요', image: 'Kimchi Fried Rice.jpg' },
     { name: '계란 말이', ingredients: ['계란', '파'], description: '부드럽고 식감이 재미있는 계란말이 입니다.', recipe: '계란 말이 레시피 : 프라이팬에 식용유를 두른다 -> 계란을 깐다 -> 계란을 푼다\n -> 넓게 펼치고 썰어둔 파를 넣는다. -> 접어가면서 만다.', image: 'eggroll.webp' },
     { name: '에그 프라이', ingredients: ['계란'], description: '어디든 올려도 좋은 에그프라이입니다.', recipe: '에그 프라이 레시피 : 프라이팬에 식용유를 두른다 -> 계란을 깐다 -> 적당히 익힌다.', image: 'eggfrie.webp' },
-    { name: '파전', ingredients: ['파', '반죽'], description: '비오는날 생각나는 파전입니다.', recipe: '프라이팬에 식용유를 두르고 달군다 -> 채썬 파를 올린다 -> 밀가루 반죽을 적당히 두른다 -> 뒤집으며 익힌다.', image: 'pajun.jpg' }
+    { name: '간장 계란 밥', ingredients: ['계란', '간장', '참기름', '밥'], description: '귀찮을땐 이걸로 때우죠?', recipe: '에그 프라이를 만듭니다.(계란 검색후 에그 프라이 레시피 참고.) -> 밥위에 에그 프라이를 올립니다. -> 간장과 참기름을 뿌립니다. -> 섞습니다.', image: 'eggbob.webp' },
+    { name: '파전', ingredients: ['반죽', '파'], description: '비오는날 생각나는 파전입니다.', recipe: '팬에 식용유를 두르고 달굽니다 -> 채썬 파를 얹고 넒게 펼칩니다. -> 반죽을 살살 끼얹어 파끼리 붙을수 있도록 합니다. -> 파전을 뒤집어가며 익힙니다.', image: 'pajun.jpg' }
   ];
   
   const searchInput = document.getElementById('search-input');
